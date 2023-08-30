@@ -1,0 +1,110 @@
+{
+    "name": "InputActionBasic",
+    "maps": [
+        {
+            "name": "ActionMapsBasic",
+            "id": "0871d3be-2653-41c4-9393-124e2d93f889",
+            "actions": [
+                {
+                    "name": "DoMoveKey",
+                    "type": "Value",
+                    "id": "06ca4197-de9b-4cbf-9d70-f5c11be01c67",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DoFierKey",
+                    "type": "Button",
+                    "id": "5b076b8b-dc69-4292-8bdf-61a3f1dc2826",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5b0d2df5-e30f-42b2-abe7-f288918f6c99",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoFierKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "77c4d7f9-e609-465f-a58e-dcc9c3b0f842",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoMoveKey",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "27b265d9-709e-4ca8-a185-b12e28b9611d",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoMoveKey",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "053eb1e9-6c8d-4533-b900-da097fae5562",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoMoveKey",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "0b893384-4a6e-48b9-b179-520d7ffa2411",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoMoveKey",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "35fe54e1-a651-4eb9-a020-a1b46f20f524",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoMoveKey",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "controlSchemaBasicPC",
+            "bindingGroup": "controlSchemaBasicPC",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

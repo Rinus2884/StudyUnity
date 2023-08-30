@@ -1,0 +1,110 @@
+{
+    "name": "InputActionCSharp",
+    "maps": [
+        {
+            "name": "ActionMapsAxis",
+            "id": "6b6a7c34-9425-4d1c-b7db-e85d4861dff7",
+            "actions": [
+                {
+                    "name": "DoMoveForwardAxis",
+                    "type": "Value",
+                    "id": "6dccbbfb-d2ae-4673-bf7f-737df37ae5e1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DoRotate",
+                    "type": "Button",
+                    "id": "341337a7-afaf-4d80-8ac5-4ba6719b3e5a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "d8879734-54c5-43b1-b7a3-fa0d99aab079",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoMoveForwardAxis",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b4cdf9ab-1010-431a-bd9c-2260fb507b73",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controlSchemaAxisPC",
+                    "action": "DoMoveForwardAxis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "70852eeb-91d2-432c-865a-a7e485c7b922",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controlSchemaAxisPC",
+                    "action": "DoMoveForwardAxis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "e193e820-ccc6-414d-ab33-4da209d54e17",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoRotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "3e0ff97f-0020-4c4c-a915-daaf2f6e81fc",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controlSchemaAxisPC",
+                    "action": "DoRotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "36699a11-dea0-42b8-9653-238e2a2bbc95",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controlSchemaAxisPC",
+                    "action": "DoRotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "controlSchemaAxisPC",
+            "bindingGroup": "controlSchemaAxisPC",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
