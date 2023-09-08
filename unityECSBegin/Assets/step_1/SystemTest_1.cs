@@ -51,6 +51,8 @@ partial struct SystemTest_1 : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState tState)
     {
+        //ecs 수준에서 엔티티 게임 오브젝트 하나를 만듬
+
         //등록해둔 컴포넌트를 얻는다.
         var tSpawnerCube= SystemAPI.GetSingleton<SpawnerCube>();
 
